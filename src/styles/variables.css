@@ -1,0 +1,16 @@
+:root {
+  --bg: #050816;
+  --card: #0F172A;
+  --secondary: #1E293B;
+
+  --blue: #3B82F6;
+  --cyan: #06B6D4;
+
+  --white: #F8FAFC;
+  --gray: #94A3B8;
+
+  --success: #00FF88;
+
+  --border: rgba(148, 163, 184, 0.15);
+  --grid-line: rgba(59, 130, 246, 0.06);
+}

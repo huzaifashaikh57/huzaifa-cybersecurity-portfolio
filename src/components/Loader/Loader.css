@@ -1,0 +1,49 @@
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.loader-box {
+  width: min(420px, 88vw);
+  color: var(--gray);
+}
+
+.loader-line {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+.loader-line .ok {
+  color: var(--success);
+}
+
+.loader-bar-track {
+  width: 100%;
+  height: 4px;
+  background: var(--secondary);
+  border-radius: 2px;
+  margin-top: 1.25rem;
+  overflow: hidden;
+}
+
+.loader-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  border-radius: 2px;
+}
+
+.loader-caret::after {
+  content: '_';
+  animation: typeCaret 1s steps(1) infinite;
+  color: var(--cyan);
+}

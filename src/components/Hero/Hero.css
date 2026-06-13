@@ -1,0 +1,285 @@
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8rem 1.5rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+}
+
+.hero-glow-1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(59,130,246,.18);
+  top: 10%;
+  right: -5%;
+}
+
+.hero-glow-2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(6,182,212,.12);
+  bottom: 5%;
+  left: -5%;
+}
+
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+
+  padding: .65rem 1rem;
+
+  border: 1px solid rgba(0,255,136,.25);
+  background: rgba(0,255,136,.05);
+
+  border-radius: 999px;
+
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .75rem;
+  letter-spacing: .15em;
+  color: var(--success);
+
+  margin-bottom: 2rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--success);
+}
+
+.hero-name {
+  font-family: 'Space Grotesk', sans-serif;
+
+  font-size: clamp(4rem, 11vw, 8rem);
+
+  line-height: .9;
+
+  font-weight: 800;
+
+  letter-spacing: -.05em;
+
+  margin: 0;
+
+  color: var(--white);
+}
+
+.hero-role {
+  margin-top: 1.5rem;
+
+  font-family: 'JetBrains Mono', monospace;
+
+  font-size: clamp(1rem,2vw,1.4rem);
+
+  color: var(--cyan);
+}
+
+.hero-specializations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+
+  margin-top: 1.25rem;
+}
+
+.hero-specializations span {
+  padding: .5rem .9rem;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  background: rgba(255,255,255,.03);
+
+  border-radius: 999px;
+
+  font-size: .8rem;
+
+  color: var(--gray);
+
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.hero-terminal {
+  margin-top: 2rem;
+
+  max-width: 700px;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  background: rgba(255,255,255,.03);
+
+  backdrop-filter: blur(20px);
+
+  padding: 1.25rem;
+
+  border-radius: 12px;
+}
+
+.terminal-prefix {
+  color: var(--success);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal-command {
+  color: var(--white);
+  margin-left: .5rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal-output {
+  margin-top: 1rem;
+
+  color: var(--gray);
+
+  line-height: 1.7;
+
+  font-size: .95rem;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  margin-top: 3rem;
+}
+
+.hero-stat {
+  min-width: 120px;
+}
+
+.hero-stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.hero-stat-value.success {
+  color: var(--success);
+}
+
+.hero-stat-label {
+  margin-top: .35rem;
+
+  font-size: .75rem;
+
+  letter-spacing: .15em;
+
+  color: var(--gray);
+
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+
+  margin-top: 3rem;
+}
+
+.hero-btn {
+  padding: 1rem 1.5rem;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+
+  transition: all .25s ease;
+}
+
+.hero-btn-primary {
+  background: linear-gradient(
+    90deg,
+    var(--blue),
+    var(--cyan)
+  );
+
+  color: #050816;
+
+  font-weight: 700;
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 40px rgba(6,182,212,.35);
+}
+
+.hero-btn-outline {
+  border: 1px solid rgba(255,255,255,.08);
+  color: white;
+}
+
+.hero-btn-outline:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.hero-scroll {
+  position: absolute;
+
+  bottom: 2rem;
+  left: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  color: var(--gray);
+
+  font-family: 'JetBrains Mono', monospace;
+
+  font-size: .7rem;
+
+  letter-spacing: .2em;
+}
+
+.hero-scroll span {
+  width: 1px;
+  height: 40px;
+
+  background: linear-gradient(
+    to bottom,
+    var(--cyan),
+    transparent
+  );
+}

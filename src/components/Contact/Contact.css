@@ -1,0 +1,93 @@
+.contact-terminal {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 3rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.contact-terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-terminal-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.contact-terminal-body {
+  padding: 1.75rem 1.5rem;
+}
+
+.contact-terminal-line {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+
+.contact-terminal-line .prompt {
+  color: var(--success);
+}
+
+.contact-terminal-line .cmd {
+  color: var(--white);
+}
+
+.contact-terminal-result {
+  color: var(--success);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  margin: 0.5rem 0 1.75rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact-field-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 0.4rem;
+}
+
+.contact-field-value {
+  color: var(--white);
+  font-size: 0.95rem;
+}
+
+.contact-field-value a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.contact-field-value a:hover {
+  text-decoration: underline;
+}
+
+.contact-footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--gray);
+  text-transform: uppercase;
+}

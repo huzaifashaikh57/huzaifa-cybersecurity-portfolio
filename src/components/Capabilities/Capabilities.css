@@ -1,0 +1,164 @@
+.capabilities-section {
+  padding: 8rem 1.5rem;
+}
+
+.capabilities-header {
+  max-width: 900px;
+  margin-bottom: 4rem;
+}
+
+.capabilities-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+
+  color: var(--cyan);
+
+  font-size: .75rem;
+
+  letter-spacing: .2em;
+}
+
+.capabilities-title {
+  margin-top: 1rem;
+
+  font-size: clamp(2.5rem,6vw,5rem);
+
+  line-height: .95;
+
+  font-family: 'Space Grotesk', sans-serif;
+
+  color: var(--white);
+}
+
+.capabilities-subtitle {
+  margin-top: 1rem;
+
+  max-width: 700px;
+
+  color: var(--gray);
+
+  line-height: 1.8;
+}
+
+.capabilities-layout {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(320px,1fr)
+  );
+
+  gap: 1.5rem;
+}
+
+.capability-module {
+  position: relative;
+
+  border-radius: 18px;
+
+  padding: 1.75rem;
+
+  background: rgba(255,255,255,.03);
+
+  border: 1px solid rgba(255,255,255,.06);
+
+  transition: .35s ease;
+}
+
+.capability-module::before {
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    var(--blue),
+    var(--cyan)
+  );
+}
+
+.capability-module:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(6,182,212,.25);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.25);
+}
+
+.module-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.module-code {
+  font-family: 'JetBrains Mono', monospace;
+
+  color: var(--gray);
+
+  font-size: .75rem;
+
+  letter-spacing: .15em;
+}
+
+.module-status {
+  color: var(--success);
+
+  font-family: 'JetBrains Mono', monospace;
+
+  font-size: .7rem;
+
+  letter-spacing: .15em;
+}
+
+.module-title {
+  margin-top: 1.5rem;
+
+  font-size: 1.6rem;
+
+  font-family: 'Space Grotesk', sans-serif;
+
+  color: var(--white);
+}
+
+.module-description {
+  margin-top: 1rem;
+
+  color: var(--gray);
+
+  line-height: 1.8;
+}
+
+.module-tools {
+  margin-top: 1.5rem;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: .6rem;
+}
+
+.module-tool {
+  padding: .45rem .75rem;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.04);
+
+  border: 1px solid rgba(255,255,255,.05);
+
+  color: var(--cyan);
+
+  font-family: 'JetBrains Mono', monospace;
+
+  font-size: .75rem;
+}
